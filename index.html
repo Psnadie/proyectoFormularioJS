@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Club Penguin - Nicolas Lopez</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">CLUB PENGUIN LEGACY</div>
+
+        <div class="main-content">
+            <div class="left-section">
+                <div class="penguin-display">
+                    <img id="penguinImg" src="PinguinosColores/penguin-turquesa.png" alt="Penguin"
+                        class="penguin-image">
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">1.</div>
+                        <div class="step-title">Create Penguin Name:</div>
+                    </div>
+                    <input type="text" placeholder="Enter Penguin Name" maxlength="12">
+                    <ul class="guidelines">
+                        <li>4 - 12 letters, numbers, or spaces</li>
+                        <li>Do not use your real name</li>
+                        <li><a href="#">Click me to read more guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">2.</div>
+                        <div class="step-title">Choose Penguin Color:</div>
+                    </div>
+                    <div class="color-grid">
+                        <div class="color-option selected" style="background-color: #20B2AA;"
+                            onclick="changePenguinColor(this, 'turquesa')"></div>
+                        <div class="color-option" style="background-color: #191970;"
+                            onclick="changePenguinColor(this, 'azul')"></div>
+                        <div class="color-option" style="background-color: #32CD32;"
+                            onclick="changePenguinColor(this, 'verde')"></div>
+                        <div class="color-option" style="background-color: #FF6B9D;"
+                            onclick="changePenguinColor(this, 'rosa')"></div>
+                        <div class="color-option" style="background-color: #FFD700;"
+                            onclick="changePenguinColor(this, 'amarillo')"></div>
+
+                        <div class="color-option" style="background-color: #9370DB;"
+                            onclick="changePenguinColor(this, 'purpura')"></div>
+                        <div class="color-option" style="background-color: #228B22;"
+                            onclick="changePenguinColor(this, 'verde')"></div>
+                        <div class="color-option" style="background-color: #FF8C00;"
+                            onclick="changePenguinColor(this, 'naranja')"></div>
+                        <div class="color-option" style="background-color: #2F4F4F;"
+                            onclick="changePenguinColor(this, 'negro')"></div>
+                        <div class="color-option" style="background-color: #4682B4;"
+                            onclick="changePenguinColor(this, 'azul')"></div>
+
+                        <div class="color-option" style="background-color: #ADFF2F;"
+                            onclick="changePenguinColor(this, 'verde')"></div>
+                        <div class="color-option" style="background-color: #8B4513;"
+                            onclick="changePenguinColor(this, 'marron')"></div>
+                        <div class="color-option" style="background-color: #FF1493;"
+                            onclick="changePenguinColor(this, 'rosa')"></div>
+                        <div class="color-option" style="background-color: #DC143C;"
+                            onclick="changePenguinColor(this, 'rojo')"></div>
+                        <div class="color-option" style="background-color: #DDA0DD;"
+                            onclick="changePenguinColor(this, 'lavanda')"></div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">3.</div>
+                        <div class="step-title">Create Password:</div>
+                    </div>
+                    <input type="password" placeholder="Enter Password" style="margin-bottom: 15px;">
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">4.</div>
+                        <div class="step-title">Parent's Email Address</div>
+                    </div>
+                    <input type="email" placeholder="Enter Parent's Email Address">
+                </div>
+
+                <button class="next-button">Next ➜</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts.js" defer></script>
+
+</html>
