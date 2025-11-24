@@ -24,7 +24,7 @@
                         <div class="step-number">1.</div>
                         <div class="step-title">Create Penguin Name:</div>
                     </div>
-                    <input type="text" placeholder="Enter Penguin Name" maxlength="12">
+                    <input id="penguinName" type="text" placeholder="Enter Penguin Name" maxlength="12">
                     <ul class="guidelines">
                         <li>4 - 12 letters, numbers, or spaces</li>
                         <li>Do not use your real name</li>
@@ -80,8 +80,8 @@
                         <div class="step-number">3.</div>
                         <div class="step-title">Create Password:</div>
                     </div>
-                    <input type="password" placeholder="Enter Password" style="margin-bottom: 15px;">
-                    <input type="password" placeholder="Confirm Password">
+                    <input id="password" type="password" placeholder="Enter Password" style="margin-bottom: 15px;">
+                    <input id="confirmPassword" type="password" placeholder="Confirm Password">
                 </div>
 
                 <div class="step">
@@ -89,7 +89,18 @@
                         <div class="step-number">4.</div>
                         <div class="step-title">Parent's Email Address</div>
                     </div>
-                    <input type="email" placeholder="Enter Parent's Email Address">
+                    <input id="parentEmail" type="email" placeholder="Enter Parent's Email Address">
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">5.</div>
+                        <div class="step-title">Privacy Policy</div>
+                    </div>
+                    <div class="privacy">
+                        <input id="acceptPrivacy" type="checkbox">
+                        <label for="acceptPrivacy">I accept the <a href="#">Privacy Policy</a></label>
+                    </div>
                 </div>
 
                 <button class="next-button">Next ➜</button>
@@ -98,5 +109,8 @@
     </div>
 </body>
 <script src="scripts.js" defer></script>
+
+    <!-- Sección de resumen de datos -->
+    <section id="summary" class="summary" aria-live="polite"></section>
 
 </html>
